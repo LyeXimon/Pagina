@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Neosistemas</title>
+	<link rel="stylesheet" type="text/css" href="act1.css">
+</head>
+<body>
+<div class="back" onmousemove="xy(event)">
+<div class="title" onclick="first()">NEOSISTEMAS</div>
+<img src="neo.png" class="escu" id="es">
+<div class="eje1" onclick="second()" id="e1">EJE 1</div>
+<div class="eje2" onclick="third()" id="e2">EJE 2</div>
+<div class="big" id="main" ></div>
+<div class="big2" id="main2" ></div>
+</div>
+<script type="text/javascript">
+	function first() {
+		es.style.opacity=1;
+		setTimeout(out, 1000);
+	}
+	function out() {
+		es.style.opacity=0;
+		e1.style.opacity=1;		
+		e2.style.opacity=1;
+	}
+	function second() {
+		main.style.zIndex=1;
+		main2.style.zIndex=0;
+		main.style.opacity=1;
+		main2.style.opacity=0;
+	}
+	function xy(event) {
+		x=event.clientX;
+		y=event.clientY;
+		if(x>567&&y>259&&x<1461&&y<665)
+		{
+			main.innerHTML="(X,Y) "+"("+x+","+y+")"+"<br>"+"Estoy dentro";
+		}
+		else{
+			main.innerHTML="Estoy fuera";
+		}
+		
+	}
+	function third() {
+		main.style.zIndex=0;
+		main2.style.zIndex=1;
+		main.style.opacity=0;
+		main2.style.opacity=1;
+		cont=setInterval(conta, 1000);
+		z=6;
+		function conta(){
+			z=z-1;
+			main2.innerHTML="0:0"+z; 
+			if(z==0)
+			{
+				clearInterval(cont);
+				es.style.opacity=0;
+		        e1.style.opacity=0;		
+		        e2.style.opacity=0;
+		        main.style.opacity=0;
+		        main2.style.opacity=0;
+			}
+		}
+	}
+</script>
+</body>
+</html>
