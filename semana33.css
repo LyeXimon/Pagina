@@ -1,0 +1,129 @@
+body{
+	background: #2D3131;
+}
+.show{
+	position: absolute;
+	left: 20%;
+	top: 5%;
+	width: 60%;
+	height: 40%;
+	background: #191919;
+	box-shadow: 4px 4px 8px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	font-size: 200%;
+	color: white;
+	text-align: center;
+}
+.form{
+	position: absolute;
+	width: 10%;
+	left: 45%;
+	top: 53%;
+	height: 5%;
+	border: 0;
+	border: solid 2px #12FF1C;
+	border-radius: 50px;
+	text-align: center;
+	outline: none;
+	background: none;
+	color: white;
+	font-family: sans-serif;
+}
+.form::placeholder{
+	color: #656565;
+}
+.button{
+	position: absolute;
+	width: 10%;
+	left: 22%;
+	top: 53%;
+	height: 5%;
+	border: 0;
+	border: solid 2px #12FF1C;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background: none;
+	color: white;
+	transition: all 0.3s;
+	font-family: sans-serif;
+}
+.button:hover{
+	background: #12FF1C;
+	color: white;
+}
+.compare{
+	position: absolute;
+	width: 10%;
+	left: 68%;
+	top: 53%;
+	height: 5%;
+	border: 0;
+	border: solid 2px #12FF1C;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background: none;
+	color: white;
+	transition: all 0.3s;
+	font-family: sans-serif;
+}
+.compare:hover{
+	background: #12FF1C;
+	color: white;
+}
+.score{
+	position: absolute;
+	left: 20%;
+	top: 65%;
+	width: 30%;
+	height: 30%;
+	background: #191919;
+	box-shadow: 4px 4px 8px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	font-size: 150%;
+	color: white;
+}
+.time{
+	position: absolute;
+	left: 50%;
+	top: 65%;
+	width: 30%;
+	height: 30%;
+	background: #191919;
+	box-shadow: 4px 4px 8px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	font-size: 150%;
+	color: white;
+}
+.agre{
+	position: absolute;
+	width: 10%;
+	left: 13%;
+	top: 53%;
+	height: 5%;
+	border: 0;
+	border: solid 2px #12FF1C;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background: none;
+	color: white;
+	transition: all 0.3s;
+	font-family: sans-serif;
+}
